@@ -1,10 +1,10 @@
-## Jews, Asians, gays most targeted for hate crimes: NYPD data
+# Jews, Asians, gays most targeted for hate crimes: NYPD data
 
 For my first final project for the Lede Program, I wrote about hate crimes in New York City. I initially found and downloaded datasets from the [Federal Bureau of Investigation (FBI)](https://cde.ucr.cjis.gov/LATEST/webapp/#/pages/explorer/crime/hate-crime), but the data cover only up to 2022. 
 
 When I found more updated crime reports from the [New York Police Department](https://www.nyc.gov/site/nypd/stats/reports-analysis/hate-crimes.page), I decided to use those instead. 
 
-### Process
+## Process
 
 `scraper.ipynb`
 I began by scraping the webpage through `BeautifulSoup` and download only `.xlsx` files. The source code did not use `class` and `id` attributes, so I ran conditionals and loops.
@@ -27,10 +27,3 @@ Using `matplotlib`, I visualized trends based on the data, then saved charts to 
 For a last-minute decision to add a pie chart showing total hate crimes per category, I used Datawrapper. 
 
 Read the story here: [Jews, Asians, gays most targeted for hate crimes: NYPD data](https://cmgsalazar.github.io/lede/nyc-hate-crimes/)
-
-### Skills
-
-* Data scraping, cleaning, and visualization, through Python `pandas`, `BeautifulSoup`, and `matplotlib`
-* Adobe Illustrator
-* Datawrapper
-* HTML / CSS
