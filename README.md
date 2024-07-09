@@ -13,8 +13,8 @@ The datasets are under the folder `downloaded-datasets`.
 `wrangler.ipynb` — I did cursory previews of each file before deciding on a final topic for this project: **hate crimes according to bias motivation**. I had the option to work with the data either by quarter or by year, and preferred the former for a more nuanced analysis (e.g., anti-Asian incidents during Covid-19, anti-Jewish incidents at the onset of the Israel-Hamas war).
 
 Observed issues during this part of the process: 
-* unnecessary rows that contain text as title and description of the dataset;
-* blanks bottom rows that were not part of the actual dataset; and
+* unnecessary rows that contain text as title and description of the dataset
+* blank bottom rows that were not part of the actual dataset; and
 * inconsistent order, capitalization, and naming conventions of columns.
 
 Using `pandas`, I ran each dataframe (quarterly data) to take only the row showing total reported incidents and merge that to another dataframe. Throughout the process, I had to `drop` unnecessary rows and columns, change strings to lowercase and `strip` leading and trailing spaces for consistency, `rename` columns, and `concat` to combine dataframes.
